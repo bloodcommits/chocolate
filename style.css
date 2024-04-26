@@ -230,6 +230,14 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex-direction: column-reverse;
     gap: 15px;
   }
+
+  .card{
+    flex: 1;
+  }
+  /* .rightSide{
+    max-width: 400px;
+
+  } */
   .rightConatiner{
     height: 150px;
   }
