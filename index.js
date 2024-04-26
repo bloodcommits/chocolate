@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+  // fetching the card 
   const products = document.querySelectorAll(".card");
 let amt = 0;
+
 
 
   products.forEach(function (product) {
@@ -19,7 +22,7 @@ let amt = 0;
     let maxelements = 0;
 
 
-
+//Decrement button 
     decrementButton.addEventListener("click", function () {
       if (count > 0) {
         count--;
@@ -30,6 +33,7 @@ let amt = 0;
       }
     });
 
+    // Increment button
     incrementButton.addEventListener("click", function () {
       if (maxelements >= 8) {
         alert("Cannot add more items get premium");
@@ -42,6 +46,7 @@ let amt = 0;
       }
     });
 
+    // function for validating that nuber of chocolates will be only 8
     function checkifvalid(){
       if(amt<=8){
         console.log("good")
@@ -51,6 +56,7 @@ let amt = 0;
       else(alert("Cannot add more items get premium"))
     }
 
+    // updating the total price inside the card
     function updateTotalPrice() {
       countSpan.textContent = count;
       const productTotalPrice = count * price;
@@ -59,6 +65,7 @@ let amt = 0;
       document.getElementById('total').textContent = `Total: ₹${totalPrice.toFixed(2)}`;
     }
 
+    // the total sum of all the chocolates
     function calculateTotal() {
       let sum = 0;
       products.forEach(function(product) {
