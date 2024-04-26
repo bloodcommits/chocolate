@@ -1,0 +1,258 @@
+/* Google Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Globals  */
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.main{
+    min-height:100vh ;    
+    background-color: #FAFAFA;
+    /* color: white; */
+    overflow: hidden;
+}
+
+.navbar{
+    height: 75px;
+    border-bottom: 1px solid lightgray;
+    /* background-color: red; */
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding:0 50px;
+    justify-content: space-between;
+    background-color: #fff;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+}
+.logo  img{
+  width: 150px;
+}
+.contactBtn{
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: transform 0.3s ease-in-out;
+}
+.contactBtn:hover{
+  transform: scale(1.05);
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 30px 40px ;
+}
+
+/* Left side of the webpage  */
+.leftSide{
+flex:4;
+/* background-color: blue; */
+min-height: 100vh;
+}
+.productContainer{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Styling the card */
+
+.card {
+    width: 300px;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    object-fit: contain;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .card-content p {
+    margin-top:15px ;
+    color: #666;
+  }
+
+  .counter {
+    display: flex;
+    align-items: center;
+  }
+  
+  .count {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+  }
+  
+  .countbtn {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .countbtn:hover {
+    background-color: #0056b3;
+  }
+
+
+/*  styling of tha card */
+.card {
+    width: 300px;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .card-content p {
+    color: #666;
+  }
+
+  /* RIGHT SIDE OF THE WEB PAGE */
+  .rightSide{
+    padding: 0px 10px;
+  flex:1;
+  height: max-content;
+  border-left: 1px solid lightgray;
+  /* position: sticky;
+  position: -webkit-sticky;
+  top: 100px; required */
+  
+}
+.rightConatiner{
+background: white;
+height: 200px;  
+display: flex;
+flex-direction: column;
+padding: 20px;
+gap: 20px;
+}
+
+
+.addbtn {
+margin-top: 10px;
+display: inline-block;
+padding: 10px 20px;
+background-color: #4CAF50;
+color: white;
+text-align: center;
+text-decoration: none;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+font-weight: 500;
+}
+
+.addbtn:hover {
+background-color: #45a049;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+  }
+  .contactBtn{
+    padding: 5px;
+  }
+  .logo  img{
+    width: 110px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 15px;
+  }
+  .rightConatiner{
+    height: 150px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 870px) {
+  .card{
+    width: 250px;
+    max-width: 100%;
+    
+  }
+  .rightSide h2{
+    font-size: 22px;
+    /* font-weight: 500; */
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
